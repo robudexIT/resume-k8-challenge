@@ -1,6 +1,6 @@
 name: Resume K8 Challenge Action 
 
-  #on: workflow_dispatch #manual trigger
+  
 on: 
   push:
     branches: main
