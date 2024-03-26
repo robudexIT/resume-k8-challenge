@@ -1,0 +1,13 @@
+stress value : stress --cpu 8 --timeout 60s & 
+
+
+Check for metrics-server
+
+kubectl get pods -n kube-system | grep metrics-server
+
+if not exist deploy this:
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+after deployement check it again 
+kubectl get pods -n kube-system | grep metrics-server
+
