@@ -42,9 +42,10 @@ jobs:
           base64-kube-config: ${{ secrets.KUBE_CONFIG }} 
       - name: Check for existing deployment
         run: |
-          if kubectl get deployment shopping-cart-java-app -n app-namespace >/dev/null 2>&1; then
+          if kubectl get deployment ecomapp  >/dev/null 2>&1; then
+
             echo "Deployment exists, rolling out update"
-            kubectl rollout restart deployment deployment ecomapp
+            kubectl rollout restart  deployment ecomapp
           else
             echo "Deployment not found, applying new resources"
             kubectl apply -f kubernetes/app-deployment.yaml
