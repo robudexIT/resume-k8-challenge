@@ -1,16 +1,24 @@
 name: Resume K8 Challenge Action 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 on: workflow_dispatch #manual trigger
   #on: 
   #push:
   # branches: main
 =======
+=======
+
+>>>>>>> a857b470d33d8ac088ef7c91161792546c39c295
   
 on: 
   push:
     branches: main
+<<<<<<< HEAD
 >>>>>>> 42928f6b1c01a982ce32cf048fff1d4f2a84aed3
+=======
+
+>>>>>>> a857b470d33d8ac088ef7c91161792546c39c295
    
 permissions:
   issues: write
