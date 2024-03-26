@@ -10,7 +10,8 @@ permissions:
 jobs: 
   BuildAndPushForProduction:
     runs-on: ubuntu-latest 
-
+    env: 
+      DOCKER_REPO: ecom-web
     steps: 
       - name: Code Checkout 
         uses: actions/checkout@v4 
