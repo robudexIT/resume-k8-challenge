@@ -43,6 +43,7 @@ jobs:
       - name: Check for existing deployment
         run: |
           if kubectl get deployment ecomapp  >/dev/null 2>&1; then
+
             echo "Deployment exists, rolling out update"
             kubectl rollout restart  deployment ecomapp
           else
